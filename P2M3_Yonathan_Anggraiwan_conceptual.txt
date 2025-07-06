@@ -1,0 +1,71 @@
+1. NoSQL adalah jenis database non-relasional yang tidak menyimpan data 
+dalam bentuk tabel seperti RDBMS. NoSQL biasa digunakan untuk data yang 
+strukturnya fleksibel, seperti dokumen JSON, key-value, graph, atau wide-column. 
+
+Cocok untuk skenario high-scalability, real-time analytics, dan sistem distribusi horizontal.
+
+2. A. Menggunakan NoSQL disaat:
+- Struktur data tidak tetap atau fleksibel (misalnya format JSON, log, dokumentasi dinamis).
+- Sistem perlu menangani data dalam skala besar dan membutuhkan horizontal scaling.
+- Kamu tidak butuh jaminan konsistensi tinggi secara langsung (mengandalkan eventual consistency).
+- Use case seperti chat log, sensor IoT, product catalog yang berubah-ubah.
+
+B. Menggunakan RDBMS disaat:
+- Struktur tabel dan relasi antar data sudah jelas dan stabil (schema ketat).
+- Aplikasi menuntut strong consistency dan transaksi ACID (misalnya sistem keuangan).
+- Dibutuhkan integritas dan validasi data tingkat tinggi sejak awal.
+- Cocok untuk sistem payroll, ERP, akademik, transaksi bank, dll.
+
+3.  2 Contoh Tools NoSQL Selain ElasticSearch:
+a. MongoDB
+- Tipe: Document Store
+- Keunggulan:
+- Struktur JSON fleksibel (tidak perlu schema tetap)
+- Cocok untuk rapid development dan iterasi produk
+- Dukungan kueri kuat dan agregasi mirip SQL
+
+b. Redis
+- Tipe: Key-Value Store (in-memory)
+- Keunggulan:
+- Super cepat untuk caching dan real-time analytics
+- Cocok untuk leaderboard, session store, queue
+
+
+4. Airflow adalah platform untuk membuat, menjadwalkan, dan memonitor alur 
+kerja data pipeline yang kompleks. Biasanya digunakan untuk eksekusi terjadwal 
+(batch), dan didefinisikan dalam bentuk DAG (Directed Acyclic Graph).
+
+Contohnya: setiap malam jam 1 pagi, tarik data dari API → simpan ke PostgreSQL → jalankan model ML → kirim hasilnya via email.
+
+Airflow kuat karena:
+- Fleksibel: bisa gabungkan Python, Bash, SQL
+- Observabilitas tinggi: setiap task bisa dimonitor, retry, dll
+- Mudah diintegrasikan dengan tools seperti Docker, PostgreSQL, Spark
+
+
+5.Great Expectations adalah library Python untuk validasi kualitas data secara otomatis. 
+Kita bisa bikin "expectation" (semacam aturan kualitas) untuk memastikan data sesuai harapan: 
+a. nilai tidak null, 
+b. tipe data benar, 
+c. kolom unique,
+d. dll.
+
+Fitur utamanya:
+- Bisa dipakai inline saat eksplorasi data (pakai validator)
+- Bisa jalan otomatis di pipeline (Airflow, dbt, dll)
+- Output bisa divisualisasikan dalam bentuk report HTML interaktif
+
+6.Batch Processing adalah pendekatan pemrosesan data dalam jumlah besar secara berkala 
+(biasanya dijalankan dalam batch harian/mingguan). Tidak seperti stream yang real time, 
+batch bersifat terjadwal dan volume datanya besar.
+
+Contoh Penggunaan:
+- Menghitung total transaksi harian
+- Preprocessing data sebelum masuk ke dashboard
+- Menjalankan model prediksi churn tiap malam
+
+Tools Batch yang Umum:
+- Apache Airflow (orchestrator)
+- Apache Spark (engine untuk proses data besar)
+- dbt (transformasi SQL modular)
+- Cron (penjadwalan sederhana)
