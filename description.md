@@ -20,7 +20,8 @@
 `The output of my project this time is present the result of data Great Expecations and data visualization using kibana on Elasticsearch.`
 
 ## Data
-`The dataset used in this project comes from Kaggle (https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data). It contains employee informations like employee salary, employee performance score and many more. This data contain 100,000 rows and 20 columns. The dataset is considered clean, with no duplicate entries or missing values.`
+`The dataset used in this project comes from Kaggle. It contains employee informations like employee salary, employee performance score and many more. This data contain 100,000 rows and 20 columns. The dataset is considered clean, with no duplicate entries or missing values.`
+- [URL Dataset](https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data)
 
 ## Method
 `In this moment, I am building an end-to-end data pipeline using Apache Airflow, Docker, PostgreSQL, and Elasticsearch. I’ve also implemented data validation steps using Great Expectations to ensure data integrity throughout the workflow. The final output is visualized in Kibana to provide the HR team with clear and interactive dashboards.`
