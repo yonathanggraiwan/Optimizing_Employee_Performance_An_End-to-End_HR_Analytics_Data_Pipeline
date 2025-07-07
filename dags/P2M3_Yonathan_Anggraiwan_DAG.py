@@ -1,3 +1,18 @@
+'''
+# Milestone 3
+
+## Introduction
+Nama  : Yonathan Anggraiwan
+
+Batch : 028
+
+Program ini dibuat untuk melakukan end-to-end data pipeline dari PostgreSQL ke ElasticSearch. Adapun dataset yang dipakai adalah dataset data karyawan yang didapatkan dari situs [Kaggle](https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data). 
+
+Dalam project kali ini, juga dilakukan validasi data menggunakan teknik Great Expecations, dan visualisasi data yang ditampilkan dalam dashboard interaktif dari Kibana.
+
+'''
+
+
 import datetime as dt
 from datetime import timedelta
 import psycopg2 as db
@@ -54,6 +69,7 @@ def data_cleaning():
     df.columns = df.columns.str.lower().str.strip()
     df.to_csv('/tmp/P2M3_Yonathan_Anggraiwan_data_clean.csv', index=False)
     df.to_csv('/opt/airflow/dags/P2M3_Yonathan_Anggraiwan_data_clean.csv', index=False)
+
 
 # Task 3 – Tunggu sampai Elasticsearch siap
 def wait_for_es():
