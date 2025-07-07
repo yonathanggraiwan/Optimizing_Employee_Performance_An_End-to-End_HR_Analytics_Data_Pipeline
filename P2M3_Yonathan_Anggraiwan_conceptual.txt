@@ -1,46 +1,52 @@
-1. NoSQL adalah jenis database non-relasional yang tidak menyimpan data 
-dalam bentuk tabel seperti RDBMS. NoSQL biasa digunakan untuk data yang 
-strukturnya fleksibel, seperti dokumen JSON, key-value, graph, atau wide-column. 
+# Milestone 3
+___
 
-Cocok untuk skenario high-scalability, real-time analytics, dan sistem distribusi horizontal.
+## Introduction
+Nama  : Yonathan Anggraiwan
+
+Batch : 028
+
+Program ini dibuat untuk melakukan end-to-end data pipeline dari PostgreSQL ke ElasticSearch. Adapun dataset yang dipakai adalah dataset data karyawan yang didapatkan dari situs [Kaggle](https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data). 
+
+Dalam project kali ini, juga dilakukan validasi data menggunakan teknik Great Expecations, dan visualisasi data yang ditampilkan dalam dashboard interaktif dari Kibana.
+___
+
+1. NoSQL adalah jenis database non-relasional yang tidak menyimpan data 
+dalam bentuk tabel seperti RDBMS. NoSQL biasanya digunakan untuk data yang 
+strukturnya fleksibel, seperti dokumen JSON, data key value, dan data grafik. 
 
 2. A. Menggunakan NoSQL disaat:
 - Struktur data tidak tetap atau fleksibel (misalnya format JSON, log, dokumentasi dinamis).
-- Sistem perlu menangani data dalam skala besar dan membutuhkan horizontal scaling.
-- Kamu tidak butuh jaminan konsistensi tinggi secara langsung (mengandalkan eventual consistency).
-- Use case seperti chat log, sensor IoT, product catalog yang berubah-ubah.
+- Sistem perlu untuk menangani data dalam jumlah yang besar.
 
 B. Menggunakan RDBMS disaat:
-- Struktur tabel dan relasi antar data sudah jelas dan stabil (schema ketat).
-- Aplikasi menuntut strong consistency dan transaksi ACID (misalnya sistem keuangan).
-- Dibutuhkan integritas dan validasi data tingkat tinggi sejak awal.
-- Cocok untuk sistem payroll, ERP, akademik, transaksi bank, dll.
+- Struktur tabel dan relasi antar data sudah jelas dan stabil.
+- Dibutuhkan integritas dan validasi data yang kuat.
 
-3.  2 Contoh Tools NoSQL Selain ElasticSearch:
+3. 2 Contoh Tools NoSQL Selain ElasticSearch:
 a. MongoDB
 - Tipe: Document Store
 - Keunggulan:
-- Struktur JSON fleksibel (tidak perlu schema tetap)
+- Struktur JSON fleksibel (tidak perlu skema data yang tetap)
 - Cocok untuk rapid development dan iterasi produk
-- Dukungan kueri kuat dan agregasi mirip SQL
+- Mirip SQL
 
 b. Redis
-- Tipe: Key-Value Store (in-memory)
+- Tipe: Key-Value Store
 - Keunggulan:
-- Super cepat untuk caching dan real-time analytics
+- Super cepat untuk caching dan real time analytics
 - Cocok untuk leaderboard, session store, queue
 
-
 4. Airflow adalah platform untuk membuat, menjadwalkan, dan memonitor alur 
-kerja data pipeline yang kompleks. Biasanya digunakan untuk eksekusi terjadwal 
+kerja data pipeline. Biasanya digunakan untuk melakukan eksekusi yang terjadwal 
 (batch), dan didefinisikan dalam bentuk DAG (Directed Acyclic Graph).
 
 Contohnya: setiap malam jam 1 pagi, tarik data dari API → simpan ke PostgreSQL → jalankan model ML → kirim hasilnya via email.
 
-Airflow kuat karena:
-- Fleksibel: bisa gabungkan Python, Bash, SQL
+Airflow bagus karena:
+- Fleksibel: bisa menggabungkan Python, Bash, SQL
 - Observabilitas tinggi: setiap task bisa dimonitor, retry, dll
-- Mudah diintegrasikan dengan tools seperti Docker, PostgreSQL, Spark
+- Mudah diintegrasikan dengan tools seperti Docker, PostgreSQL, dll.
 
 
 5.Great Expectations adalah library Python untuk validasi kualitas data secara otomatis. 
@@ -51,9 +57,9 @@ c. kolom unique,
 d. dll.
 
 Fitur utamanya:
-- Bisa dipakai inline saat eksplorasi data (pakai validator)
-- Bisa jalan otomatis di pipeline (Airflow, dbt, dll)
-- Output bisa divisualisasikan dalam bentuk report HTML interaktif
+- Dapat dipakai inline saat eksplorasi data (pakai validator)
+- Dapat dijalankan secara otomatis dalam pipeline (Airflow, dbt, dll)
+- Output dapat divisualisasikan dalam bentuk report HTML interaktif
 
 6.Batch Processing adalah pendekatan pemrosesan data dalam jumlah besar secara berkala 
 (biasanya dijalankan dalam batch harian/mingguan). Tidak seperti stream yang real time, 
