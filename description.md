@@ -20,17 +20,17 @@
 `The output of my project this time is present the result of data Great Expecations and data visualization using kibana on Elasticsearch.`
 
 ## Data
-`The dataset used in this project comes from Kaggle (https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data). It contains customer financial informations, with 100,000 rows and 20 columns. The dataset is considered clean, with no duplicate entries or missing values.`
+`The dataset used in this project comes from Kaggle (https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data). It contains employee informations like employee salary, employee performance score and many more. This data contain 100,000 rows and 20 columns. The dataset is considered clean, with no duplicate entries or missing values.`
 
 ## Method
 `In this moment, I am building an end-to-end data pipeline using Apache Airflow, Docker, PostgreSQL, and Elasticsearch. I’ve also implemented data validation steps using Great Expectations to ensure data integrity throughout the workflow. The final output is visualized in Kibana to provide the HR team with clear and interactive dashboards.`
 
 ## Stacks
-`The programming language used in this project is Python, with VSCode as the development tool. The libraries used include pandas, and Great Expectations. Data visualization is also presented in kibana dashboard.`
+`The programming language used in this project is Python, with VSCode as the development tool. The libraries used include pandas, psycopg2, elasticsearch, airflow, and Great Expectations. Data visualization is also presented in kibana dashboard.`
 
 ## Reference
-`The supporting link for the results of this project analysis can be found in the following project dashboard link:
-https://huggingface.co/spaces/rvpishere/Risk_Score_Prediction_In_Bank_Loan_Application`
+`The supporting link for the results of this project analysis can be found in the following presentation link:
+https://www.canva.com/design/DAGse7cQJgc/r2NPH6bN9tA5sfi5i0x6rQ/edit?utm_content=DAGse7cQJgc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton`
 
 ---
 
