@@ -120,6 +120,20 @@ fluent_datasources:
         type: csv
         filepath_or_buffer: D:\1. Data Science\1. Bootcamp\Fase 
           2\hck028\p2-ftds028-hck-m3-yonathanggraiwan\dags\P2M3_Yonathan_Anggraiwan_data_clean.csv
+  csv-data-ms3-1.2:
+    type: pandas
+    assets:
+      ms3:
+        type: csv
+        filepath_or_buffer: D:\1. Data Science\1. Bootcamp\Fase 
+          2\hck028\p2-ftds028-hck-m3-yonathanggraiwan\dags\P2M3_Yonathan_Anggraiwan_data_clean.csv
+  csv-data-ms3-1.3:
+    type: pandas
+    assets:
+      ms3:
+        type: csv
+        filepath_or_buffer: D:\1. Data Science\1. Bootcamp\Fase 
+          2\hck028\p2-ftds028-hck-m3-yonathanggraiwan\dags\P2M3_Yonathan_Anggraiwan_data_clean.csv
 notebooks:
 include_rendered_content:
   globally: false

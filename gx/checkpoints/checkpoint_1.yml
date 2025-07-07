@@ -20,7 +20,7 @@ evaluation_parameters: {}
 runtime_configuration: {}
 validations:
   - batch_request:
-      datasource_name: csv-data-ms3-1
+      datasource_name: csv-data-ms3-1.2
       data_asset_name: ms3
       options: {}
       batch_slice:

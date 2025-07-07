@@ -70,7 +70,6 @@ def data_cleaning():
     df.to_csv('/tmp/P2M3_Yonathan_Anggraiwan_data_clean.csv', index=False)
     df.to_csv('/opt/airflow/dags/P2M3_Yonathan_Anggraiwan_data_clean.csv', index=False)
 
-
 # Task 3 – Tunggu sampai Elasticsearch siap
 def wait_for_es():
     '''
