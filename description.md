@@ -29,8 +29,8 @@
 `The programming language used in this project is Python, with VSCode as the development tool. The libraries used include pandas, psycopg2, elasticsearch, airflow, and Great Expectations. Data visualization is also presented in kibana dashboard.`
 
 ## Reference
-`The supporting link for the results of this project analysis can be found in the following presentation link:
-https://www.canva.com/design/DAGse7cQJgc/r2NPH6bN9tA5sfi5i0x6rQ/edit?utm_content=DAGse7cQJgc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton`
+`The supporting link for the results of this project analysis can be found in the following presentation link:`
+- [Presentation Link](https://www.canva.com/design/DAGse7cQJgc/r2NPH6bN9tA5sfi5i0x6rQ/edit?utm_content=DAGse7cQJgc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 
