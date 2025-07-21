@@ -1,5 +1,5 @@
 '''
-# Optimizing Employee Performance An End-to-End HR Analytics Data Pipeline
+# Optimizing Employee Performance With End-to-End HR Analytics Data Pipeline
 
 ## Introduction
 Name  : Yonathan Anggraiwan

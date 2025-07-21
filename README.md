@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Optimizing Workforce Performance: An End-to-End HR Analytics Pipeline
+# Optimizing Workforce Performance: With End-to-End HR Analytics Pipeline
 
 ## Repository Outline
 ```
@@ -40,4 +39,3 @@ Contact Person:
 =======
 # Optimizing_Employee_Performance_An_End-to-End_HR_Analytics_Data_Pipeline
 This program was developed to perform an end-to-end data pipeline from PostgreSQL to ElasticSearch. The dataset used is an employee data collection obtained from Kaggle. In this project, data validation was also carried out using the Great Expectations technique, and the data visualization is presented in an interactive dashboard using Kibana.
->>>>>>> 8e1eef8716e3a21e9ea925c56b16785766667ce5
