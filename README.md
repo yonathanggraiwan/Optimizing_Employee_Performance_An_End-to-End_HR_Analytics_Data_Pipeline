@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Optimizing Workforce Performance: An End-to-End HR Analytics Pipeline
 
 ## Repository Outline
