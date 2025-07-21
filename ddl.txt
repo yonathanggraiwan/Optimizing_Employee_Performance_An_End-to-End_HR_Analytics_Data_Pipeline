@@ -1,0 +1,72 @@
+# Optimizing Employee Performance An End-to-End HR Analytics Data Pipeline
+___
+
+## Introduction
+Name  : Yonathan Anggraiwan
+
+This program was designed to implement an end-to-end data pipeline from PostgreSQL to ElasticSearch, utilizing an employee performance and productivity dataset sourced from [Kaggle](https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data). 
+
+The project also includes data validation using the Great Expectations framework, and the results are presented through an interactive dashboard built with Kibana.
+___
+
+
+URL Dataset: https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data
+
+
+/* Create Database */
+-- Create database M_3;
+
+/* Create Table Data */
+CREATE TABLE table_m3 (
+	"Employee_ID" INT,
+	"Department" VARCHAR(100),
+	"Gender" VARCHAR(10),
+	"Age" INT,
+	"Job_Title" VARCHAR(100),
+	"Hire_Date" DATE,
+	"Years_At_Company" INT,
+	"Education_Level" VARCHAR(50),
+	"Performance_Score" VARCHAR(20),
+	"Monthly_Salary" DECIMAL(10,2),
+	"Work_Hours_Per_Week" INT,
+	"Projects_Handled" INT,
+	"Overtime_Hours" INT,
+	"Sick_Days" INT,
+	"Remote_Work_Frequency" VARCHAR(50),
+	"Team_Size" INT,
+	"Training_Hours" INT,
+	"Promotions" INT,
+	"Employee_Satisfaction_Score" DECIMAL(3,2),
+	"Resigned" BOOLEAN
+);
+
+/* Insert Data */
+COPY table_m3(
+	"Employee_ID",
+	"Department",
+	"Gender",
+	"Age",
+	"Job_Title",
+	"Hire_Date",
+	"Years_At_Company",
+	"Education_Level",
+	"Performance_Score",
+	"Monthly_Salary",
+	"Work_Hours_Per_Week",
+	"Projects_Handled",
+	"Overtime_Hours",
+	"Sick_Days",
+	"Remote_Work_Frequency",
+	"Team_Size",
+	"Training_Hours",
+	"Promotions",
+	"Employee_Satisfaction_Score",
+	"Resigned"
+)
+FROM 'C:/tmp/P2M3_Yonathan_Anggraiwan_data_raw.csv'
+DELIMITER ',' 
+CSV HEADER;
+
+/* Show data list */
+SELECT * FROM table_m3
+LIMIT 100
