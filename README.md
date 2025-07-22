@@ -12,7 +12,7 @@
 ```
 
 ## Problem Background
-`I am a data analyst working in a big company. On this occasion, the HR team has asked me to analyze the Employee Performance and Productivity dataset to extract actionable insights that support strategic decision making.`
+`I am a data analyst working at an international company called PT. Ayoung Indonesia. The company aims to understand the internal factors that influence employee performance and productivity across various departments. With a large volume of data related to bonuses, training, satisfaction levels, and work habits (such as remote work or overtime), the HR team faces challenges in identifying areas for improvement. Therefore, an in-depth analysis is needed to extract insights from the available employee operational data.`
 
 ## Project Output
 `The output of my project this time is present the result of data Great Expecations and data visualization using kibana on Elasticsearch.`
